@@ -15,8 +15,8 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="bg-blue-500 h-screen">
-    <header class="mx-auto max-w-7xl px-4 sm:px-0 py-3">
+  <body class="bg-gradient-to-br from-cyan-900 to-sky-900 h-screen">
+    <header class="mx-auto max-w-7xl px-4 sm:px-0 py-8">
       <h1 class="text-4xl lg:text-5xl font-sans font-semibold text-white">
         Peter Kerins
       </h1>
@@ -70,17 +70,17 @@ const { title } = Astro.props;
             <span class="sr-only">Email</span>
             <svg
               class="h-6 w-6 flex-shrink-0"
-              fill="none"
+              fill="currentColor"
               viewBox="0 0 24 24"
               stroke-width="1.5"
-              stroke="currentColor"
               aria-hidden="true"
             >
               <path
-                fill-rule="evenodd"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                class="primary"
+                d="M22 8.62V18a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8.62l9.55 4.77a1 1 0 0 0 .9 0L22 8.62z"
+              ></path><path
+                class="secondary"
+                d="M12 11.38l-10-5V6c0-1.1.9-2 2-2h16a2 2 0 0 1 2 2v.38l-10 5z"
               ></path>
             </svg>
           </a>
