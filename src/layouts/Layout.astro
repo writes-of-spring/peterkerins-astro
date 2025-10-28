@@ -1,5 +1,10 @@
 ---
 import "../styles/global.css";
+import { Image } from "astro:assets";
+import instagramIcon from "../assets/icons/instagram.svg";
+import githubIcon from "../assets/icons/github.svg";
+import emailIcon from "../assets/icons/email.svg";
+
 export interface Props {
   title: string;
 }
@@ -38,7 +43,7 @@ const { title } = Astro.props;
             class="text-gray-100 hover:text-gray-300"
           >
             <span class="sr-only">Instagram</span>
-            <img src="/icons/instagram.svg" alt="" class="h-6 w-6" />
+            <Image src={instagramIcon} alt="" class="h-6 w-6" />
           </a>
 
           <a
@@ -46,7 +51,7 @@ const { title } = Astro.props;
             class="text-gray-100 hover:text-gray-300"
           >
             <span class="sr-only">GitHub</span>
-            <img src="/icons/github.svg" alt="" class="h-6 w-6" />
+            <Image src={githubIcon} alt="" class="h-6 w-6" />
           </a>
 
           <a
@@ -54,7 +59,7 @@ const { title } = Astro.props;
             class="text-gray-100 hover:text-gray-300"
           >
             <span class="sr-only">Email</span>
-            <img src="/icons/email.svg" alt="" class="h-6 w-6 flex-shrink-0" />
+            <Image src={emailIcon} alt="" class="h-6 w-6 flex-shrink-0" />
           </a>
         </div>
         <div class="mt-8 md:order-1 md:mt-0">

@@ -4,18 +4,20 @@ This document describes the performance optimizations implemented in this projec
 
 ## Implemented Optimizations
 
-### 1. SVG Icon Extraction (55% HTML Size Reduction)
+### 1. SVG Icon Extraction with Astro Image Optimization (51% HTML Size Reduction)
 **Problem**: Inline SVG icons in the layout were duplicated in the HTML output for every page, adding ~3KB of overhead.
 
-**Solution**: Extracted all social media icons (Instagram, GitHub, Email) to separate SVG files in `/public/icons/`. These are now:
-- Cached separately by browsers
-- Loaded only once and reused across pages
-- Reduce HTML from 4.9KB to 2.1KB (55% reduction)
+**Solution**: Extracted all social media icons (Instagram, GitHub, Email) to separate SVG files in `/src/assets/icons/` and use Astro's `Image` component from `astro:assets`. This provides:
+- Automatic image optimization by Astro's build pipeline
+- Lazy loading with `loading="lazy"` attribute
+- Proper width/height dimensions for better layout stability
+- Content-hashed filenames for optimal browser caching
+- Reduced HTML from 4.9KB to 2.4KB (51% reduction)
 
 **Files**:
-- `/public/icons/instagram.svg`
-- `/public/icons/github.svg`
-- `/public/icons/email.svg`
+- `/src/assets/icons/instagram.svg`
+- `/src/assets/icons/github.svg`
+- `/src/assets/icons/email.svg`
 
 ### 2. Build Optimizations
 **Configured**:
@@ -33,9 +35,9 @@ This document describes the performance optimizations implemented in this projec
 ## Performance Metrics
 
 ### File Sizes (Uncompressed)
-- HTML: 2.1 KB (down from 4.9 KB)
+- HTML: 2.4 KB (down from 4.9 KB)
 - CSS: 9.8 KB
-- Icons: 3 KB total (cached separately)
+- Icons: 3 KB total (cached separately with content hashes)
 
 ### Gzipped Sizes (Expected over HTTP)
 - HTML: ~1 KB
