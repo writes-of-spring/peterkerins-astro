@@ -8,8 +8,6 @@ export default defineConfig({
     plugins: [tailwindcss()],
     build: {
       cssMinify: "lightningcss",
-      minify: "terser",
     },
   },
-  compressHTML: true,
 });

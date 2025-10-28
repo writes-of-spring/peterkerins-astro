@@ -19,9 +19,8 @@ This document describes the performance optimizations implemented in this projec
 
 ### 2. Build Optimizations
 **Configured**:
-- HTML compression enabled via `compressHTML: true`
-- CSS minification using Lightning CSS
-- JavaScript minification using Terser (when applicable)
+- CSS minification using Lightning CSS via Vite
+- HTML and JavaScript minification (enabled by default in Astro production builds)
 
 **Configuration**: See `astro.config.mjs`
 
