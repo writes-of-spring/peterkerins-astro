@@ -6,5 +6,10 @@ export default defineConfig({
   integrations: [],
   vite: {
     plugins: [tailwindcss()],
+    build: {
+      cssMinify: "lightningcss",
+      minify: "terser",
+    },
   },
+  compressHTML: true,
 });
