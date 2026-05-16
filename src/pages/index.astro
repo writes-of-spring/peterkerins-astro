@@ -3,16 +3,36 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Peter Kerins | Software Engineer">
-    <main>
-        <div class="px-4 sm:px-0 relative mb-2 min-h-[60vh] flex max-w-7xl mx-auto">
-            <div class="max-w-7xl text-white py-5 mx-auto my-auto animate-fade-in">
-                <p
-                    class="text-3xl md:text-4xl lg:text-5xl font-semibold leading-[1.2] bg-gradient-to-r from-white to-white/90 bg-clip-text"
-                >
-                    <s class="opacity-75">Cork</s> Kilkenny based software engineer focused on building
-                    user centred applications that combine functionality and form
-                </p>
-            </div>
-        </div>
-    </main>
+  <main class="relative mx-auto flex w-full max-w-7xl flex-1 items-center px-5 py-16 sm:px-6 lg:px-8">
+    <div class="absolute inset-x-5 top-8 -z-10 h-72 rounded-full bg-cyan-300/18 blur-3xl sm:inset-x-20 lg:inset-x-48"></div>
+
+    <section class="max-w-4xl animate-fade-in text-white">
+      <p class="mb-5 inline-flex rounded-full border border-white/15 bg-white/8 px-3 py-1 text-base text-cyan-50/85 shadow-2xl shadow-cyan-950/20 backdrop-blur sm:text-sm">
+        Kilkenny-based software engineer
+      </p>
+
+      <h2 class="max-w-[14ch] text-balance text-5xl font-semibold tracking-tight text-white sm:text-6xl lg:text-7xl">
+        Building thoughtful web applications.
+      </h2>
+
+      <p class="mt-6 max-w-[58ch] text-pretty text-lg text-cyan-50/78 sm:text-base">
+        I create user-centred interfaces with JavaScript and React, balancing reliable engineering with clear, considered design.
+      </p>
+
+      <div class="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
+        <a
+          href="mailto:hello@peterkerins.com"
+          class="inline-flex items-center justify-center rounded-full bg-white px-4 py-3 text-base font-medium text-cyan-950 ring-1 ring-white transition hover:bg-cyan-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-200 sm:text-sm"
+        >
+          Get in touch
+        </a>
+        <a
+          href="https://github.com/writes-of-spring"
+          class="inline-flex items-center justify-center rounded-full border border-white/15 px-4 py-3 text-base font-medium text-white transition hover:border-white/30 hover:bg-white/8 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-200 sm:text-sm"
+        >
+          View GitHub
+        </a>
+      </div>
+    </section>
+  </main>
 </Layout>
