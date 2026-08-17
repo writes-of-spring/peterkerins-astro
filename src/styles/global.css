@@ -1,14 +1,15 @@
 @import "tailwindcss";
 
 @theme {
-  --animate-fade-in: fadeIn 0.8s ease-out forwards;
+  --font-sans: "InterVariable", sans-serif;
+  --font-sans--font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  --font-geist: "Geist", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+}
 
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
 }

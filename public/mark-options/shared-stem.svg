@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-label="Shared-stem PK symbol">
+  <rect width="128" height="128" fill="#2644e8"/>
+  <path fill="#f4f0e8" d="M28 22h15v84H28z"/>
+  <path fill="#f4f0e8" fill-rule="evenodd" d="M40 22h22c18 0 29 10 29 25S80 72 62 72H40V57h21c9 0 14-4 14-10s-5-10-14-10H40V22Z"/>
+  <path fill="#ffcb45" d="M43 63 94 22h23L68 64l50 42H95L43 66v-3Z"/>
+</svg>

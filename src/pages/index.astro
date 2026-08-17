@@ -3,30 +3,59 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Peter Kerins | Software Engineer">
-  <main class="relative mx-auto flex w-full max-w-7xl flex-1 items-center px-5 py-16 sm:px-6 lg:px-8">
-    <section class="text-white">
-      <h2 class="max-w-[16ch] text-balance text-5xl font-semibold tracking-tight text-white sm:text-6xl lg:text-7xl">
-        Designing and building web products.
-      </h2>
-
-      <p class="mt-6 max-w-[58ch] text-pretty text-lg text-cyan-50/75 sm:text-base">
-        I’m a Kilkenny-based software engineer working with JavaScript and React to turn product ideas into clear, reliable interfaces.
-      </p>
-
-      <div class="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
-        <a
-          href="mailto:hello@peterkerins.com"
-          class="inline-flex items-center justify-center rounded-md bg-white px-4 py-3 text-base font-medium text-cyan-950 ring-1 ring-white transition hover:bg-cyan-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-200 sm:text-sm"
-        >
-          Get in touch
-        </a>
-        <a
-          href="https://github.com/writes-of-spring"
-          class="inline-flex items-center justify-center rounded-md border border-white/20 px-4 py-3 text-base font-medium text-white transition hover:border-white/35 hover:bg-white/6 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-200 sm:text-sm"
-        >
-          View GitHub
-        </a>
+  <div class="isolate flex min-h-dvh flex-col bg-[#2644e8] font-sans text-white">
+    <header class="border-b border-white/25">
+      <div class="mx-auto max-w-7xl px-5 py-5 sm:px-6 lg:px-8">
+        <a href="/" aria-label="Homepage" class="text-lg font-semibold tracking-tight">Peter Kerins</a>
       </div>
-    </section>
-  </main>
+    </header>
+
+    <main class="flex-1">
+      <section class="py-14 sm:py-20 lg:py-24">
+        <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+          <div class="grid gap-10 lg:grid-cols-[8fr_2fr] lg:gap-16">
+            <div>
+              <h1 class="max-w-[20ch] text-balance font-geist text-6xl font-semibold tracking-tight text-white sm:text-8xl lg:text-9xl">
+                Clear thinking.<br />Clean interfaces.
+              </h1>
+            </div>
+            <div class="flex items-end lg:justify-end">
+              <p class="font-mono text-base uppercase tracking-wide text-white/65 sm:text-sm lg:[writing-mode:vertical-rl]">Kilkenny, Ireland · 52.6541° N</p>
+            </div>
+          </div>
+
+          <div class="mt-14 grid gap-8 border-t border-white/25 pt-8 lg:grid-cols-[6fr_4fr] lg:gap-16 lg:pt-10">
+            <p class="max-w-[40ch] text-pretty text-2xl text-white sm:text-xl">I design and build dependable digital products with JavaScript and React.</p>
+            <div class="flex flex-wrap items-center gap-5 lg:justify-end">
+              <a class="bg-[#ffcb45] px-4 py-3 text-base font-medium text-neutral-950 ring-1 ring-[#ffcb45] hover:bg-[#ffd66f] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ffcb45] sm:text-sm" href="mailto:hello@peterkerins.com">Let’s work together</a>
+              <a class="text-base font-medium text-white underline decoration-white/40 underline-offset-4 hover:decoration-white sm:text-sm" href="https://github.com/writes-of-spring">Explore the code</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="bg-[#f4f0e8] py-12 text-neutral-950 sm:py-16">
+        <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+          <div class="grid gap-10 md:grid-cols-[4fr_6fr] md:gap-16">
+            <p class="font-mono text-base uppercase tracking-wide text-[#2644e8] sm:text-sm">A focused practice</p>
+            <div>
+              <h2 class="max-w-[35ch] text-balance font-geist text-4xl font-semibold tracking-tight">From rough idea to useful, resilient product.</h2>
+              <p class="mt-5 max-w-[48ch] text-pretty text-lg text-neutral-600 sm:text-base">Good software is both legible and durable. I bring product judgement and front-end craft together so each decision earns its place.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-[#f4f0e8] pb-8 text-neutral-950">
+      <div class="mx-auto flex max-w-7xl flex-col gap-4 border-t border-neutral-950/10 px-5 pt-8 text-base text-neutral-600 sm:flex-row sm:items-center sm:justify-between sm:px-6 sm:text-sm lg:px-8">
+        <p>© 2026 Peter Kerins.</p>
+        <div class="flex gap-6 font-normal">
+          <a class="hover:text-[#2644e8]" href="mailto:hello@peterkerins.com">Email</a>
+          <a class="hover:text-[#2644e8]" href="https://github.com/writes-of-spring">GitHub</a>
+          <a class="hover:text-[#2644e8]" href="https://www.instagram.com/pete.png/">Instagram</a>
+        </div>
+      </div>
+    </footer>
+  </div>
 </Layout>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-label="Humanist pk monogram">
+  <rect width="128" height="128" fill="#f4f0e8"/>
+  <path fill="#2644e8" fill-rule="evenodd" d="M14 39h14v9c5-7 13-10 22-10 18 0 30 12 30 30S68 98 50 98c-9 0-17-3-22-10v26H14V39Zm35 14c-12 0-20 6-20 15s8 15 20 15c11 0 17-6 17-15s-6-15-17-15Z"/>
+  <path fill="#ffcb45" d="M78 22h13v47l14-29h15l-18 33 19 41h-15L91 81v33H78V22Z"/>
+</svg>
