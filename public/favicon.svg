@@ -1,5 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-label="Interlocked PK monogram">
-  <rect width="128" height="128" fill="#2644e8"/>
-  <path fill="#f4f0e8" fill-rule="evenodd" d="M26 24h35c18 0 29 10 29 25S79 74 61 74H43v30H26V24Zm17 15v20h17c9 0 14-4 14-10s-5-10-14-10H43Z"/>
-  <path fill="#ffcb45" d="m55 62 38-38h23L77 63l41 41H95L55 65v-3Z"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="60 43 1134 1134" role="img" aria-labelledby="title">
+  <title id="title">Black chess pawn with a white outline</title>
+  <g transform="translate(627 610) scale(1.22 0.9) translate(-627 -610)" fill="#000" stroke="#fff" stroke-width="34" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 398,944 C 345,964 312,995 312,1028 C 312,1094 453,1142 627,1142 C 801,1142 942,1094 942,1028 C 942,995 909,964 856,944 Z"/>
+    <path d="M 497,477 C 462,477 433,508 433,548 C 433,583 454,610 485,619 L 477,844 C 420,865 385,893 385,923 C 385,976 493,1016 627,1016 C 761,1016 869,976 869,923 C 869,893 834,865 777,844 L 768,619 C 799,610 820,583 820,548 C 820,508 791,477 756,477 Z"/>
+    <ellipse cx="627" cy="296" rx="182" ry="247"/>
+  </g>
 </svg>

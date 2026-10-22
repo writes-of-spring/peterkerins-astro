@@ -1,7 +1,9 @@
 ---
 import "../styles/global.css";
 
-export interface Props { title: string; }
+export interface Props {
+  title: string;
+}
 const { title } = Astro.props;
 ---
 
@@ -10,15 +12,21 @@ const { title } = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=interlock" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=pawn-balanced" />
     <link rel="preconnect" href="https://rsms.me" />
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <meta name="generator" content={Astro.generator} />
     <meta name="theme-color" content="#2644e8" />
-    <meta name="description" content="Peter Kerins is a Kilkenny-based software engineer who builds clear, reliable interfaces with JavaScript and React." />
+    <meta
+      name="description"
+      content="Peter Kerins is a Kilkenny-based software engineer who builds clear, reliable interfaces with JavaScript and React."
+    />
     <title>{title}</title>
   </head>
   <body>
